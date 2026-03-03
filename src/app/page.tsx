@@ -146,19 +146,39 @@ export default function HomePage() {
         <div className="rounded-3xl border border-white/10 bg-white/5 p-8">
           <h3 className="mb-4 text-3xl font-bold">Contato</h3>
 
-          <p className="mb-6 text-lg leading-8 text-zinc-300">
-            Estou construindo minha base como desenvolvedora e aberta a aprender
-            mais a cada projeto e desafio.
+          <p className="mb-3 text-lg leading-8 text-zinc-300">
+            Estou construindo minha base como desenvolvedora e aberta a novas
+            oportunidades para aprender, evoluir e contribuir com projetos.
+          </p>
+
+          <p className="mb-8 text-zinc-400">
+            Você pode falar comigo pelos links abaixo.
           </p>
 
           <div className="flex flex-wrap gap-4">
+            <a
+              href="mailto:noellealmeidasantos@outlook.com"
+              className="rounded-xl bg-violet-500 px-6 py-3 font-semibold text-white transition hover:bg-violet-400"
+            >
+              Enviar e-mail
+            </a>
+
             <a
               href="https://github.com/NoelleAlmeida"
               target="_blank"
               rel="noreferrer"
               className="rounded-xl border border-white/20 px-6 py-3 font-semibold text-white transition hover:bg-white/10"
             >
-              Meu GitHub
+              GitHub
+            </a>
+
+            <a
+              href="https://www.linkedin.com/in/noelle-almeida-dos-santos-97a92a3a5/"
+              target="_blank"
+              rel="noreferrer"
+              className="rounded-xl border border-white/20 px-6 py-3 font-semibold text-white transition hover:bg-white/10"
+            >
+              LinkedIn
             </a>
           </div>
         </div>
