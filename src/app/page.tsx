@@ -123,7 +123,7 @@ export default function HomePage() {
   return (
     <main className="min-h-screen bg-zinc-950 text-white">
       <section className="border-b border-white/10">
-        <div className="mx-auto flex max-w-6xl items-center justify-between px-6 py-6">
+        <div className="mx-auto flex max-w-6xl items-center justify-between px-4 py-5 sm:px-6 sm:py-6">
           <h1 className="text-xl font-bold">Noelle</h1>
 
           <nav className="hidden gap-6 text-sm text-zinc-300 md:flex">
@@ -149,7 +149,7 @@ export default function HomePage() {
       <section className="relative overflow-hidden">
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_left,rgba(168,85,247,0.18),transparent_35%),radial-gradient(circle_at_right,rgba(59,130,246,0.12),transparent_30%)]" />
 
-        <div className="relative mx-auto grid min-h-[80vh] max-w-6xl gap-10 px-6 py-16 lg:grid-cols-[1.3fr_0.7fr] lg:items-center">
+        <div className="relative mx-auto grid min-h-[70vh] max-w-6xl gap-8 px-4 py-10 sm:px-6 sm:py-16 lg:min-h-[80vh] lg:grid-cols-[1.3fr_0.7fr] lg:items-center lg:gap-10">
           <div>
             <div className="mb-6 flex flex-wrap gap-3">
               <span className="rounded-full border border-violet-400/20 bg-violet-500/10 px-4 py-2 text-sm font-medium text-violet-200">
@@ -161,23 +161,23 @@ export default function HomePage() {
               </span>
             </div>
 
-            <h2 className="mb-6 max-w-4xl text-4xl leading-tight font-extrabold sm:text-6xl">
+            <h2 className="mb-6 max-w-4xl text-4xl leading-tight font-extrabold sm:text-5xl lg:text-6xl">
               Transformando estudo em{" "}
               <span className="text-violet-400">projetos práticos</span> e
               evolução constante.
             </h2>
 
-            <p className="mb-8 max-w-3xl text-lg leading-8 text-zinc-300">
+            <p className="mb-8 max-w-3xl text-base leading-8 text-zinc-300 sm:text-lg">
               Olá, eu sou{" "}
               <span className="font-semibold text-white">Noelle</span>. Estou
               estudando React, TypeScript e Tailwind CSS, criando projetos na
               prática e construindo minha base no desenvolvimento web moderno.
             </p>
 
-            <div className="mb-8 flex flex-wrap gap-4">
+            <div className="mb-8 flex flex-col gap-3 sm:flex-row sm:flex-wrap sm:gap-4">
               <a
                 href="#projetos"
-                className="inline-flex items-center gap-2 rounded-xl bg-violet-500 px-6 py-3 font-semibold text-white transition hover:bg-violet-400"
+                className="inline-flex items-center justify-center gap-2 rounded-xl bg-violet-500 px-6 py-3 font-semibold text-white transition hover:bg-violet-400 sm:w-auto"
               >
                 <ExternalLinkIcon className="h-4 w-4" />
                 Ver projetos
@@ -187,7 +187,7 @@ export default function HomePage() {
                 href="https://github.com/NoelleAlmeida"
                 target="_blank"
                 rel="noreferrer"
-                className="inline-flex items-center gap-2 rounded-xl border border-white/20 px-6 py-3 font-semibold text-white transition hover:bg-white/10"
+                className="inline-flex items-center justify-center gap-2 rounded-xl border border-white/20 px-6 py-3 font-semibold text-white transition hover:bg-white/10 sm:w-auto"
               >
                 <GithubIcon className="h-5 w-5" />
                 GitHub
@@ -211,7 +211,7 @@ export default function HomePage() {
           </div>
 
           <div className="lg:justify-self-end">
-            <div className="rounded-3xl border border-white/10 bg-white/5 p-6 shadow-2xl shadow-violet-950/20 backdrop-blur">
+            <div className="rounded-3xl border border-white/10 bg-white/5 p-5 shadow-2xl shadow-violet-950/20 backdrop-blur sm:p-6">
               <div className="mb-6 flex items-center gap-4">
                 <div className="flex h-14 w-14 items-center justify-center rounded-2xl bg-violet-500/20 text-2xl font-bold text-violet-300">
                   N
@@ -248,7 +248,7 @@ export default function HomePage() {
                 </div>
               </div>
 
-              <div className="mt-6 grid grid-cols-2 gap-3">
+              <div className="mt-6 grid grid-cols-1 gap-3 sm:grid-cols-2">
                 <a
                   href="mailto:noellealmeidasantos@outlook.com"
                   className="inline-flex items-center justify-center gap-2 rounded-xl border border-white/10 bg-white/5 px-4 py-3 text-sm font-medium text-white transition hover:bg-white/10"
@@ -272,12 +272,15 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section id="sobre" className="mx-auto max-w-6xl px-6 py-16">
+      <section
+        id="sobre"
+        className="mx-auto max-w-6xl px-4 py-12 sm:px-6 sm:py-16"
+      >
         <div className="grid gap-6 lg:grid-cols-[1.2fr_0.8fr]">
-          <div className="rounded-3xl border border-white/10 bg-white/5 p-8">
+          <div className="rounded-3xl border border-white/10 bg-white/5 p-6 sm:p-8">
             <h3 className="mb-4 text-3xl font-bold">Sobre mim</h3>
 
-            <p className="mb-5 text-lg leading-8 text-zinc-300">
+            <p className="mb-5 text-base leading-8 text-zinc-300 sm:text-lg">
               Sou uma desenvolvedora em formação, com foco em me tornar cada vez
               mais uma profissional{" "}
               <span className="font-semibold text-white">full stack</span>.
@@ -286,7 +289,7 @@ export default function HomePage() {
               prática tudo o que venho estudando.
             </p>
 
-            <p className="text-lg leading-8 text-zinc-300">
+            <p className="text-base leading-8 text-zinc-300 sm:text-lg">
               Meu objetivo é evoluir continuamente no desenvolvimento web,
               fortalecendo minha base no front-end e avançando cada vez mais no
               caminho para atuar como desenvolvedora full stack, construindo
@@ -294,7 +297,7 @@ export default function HomePage() {
             </p>
           </div>
 
-          <div className="rounded-3xl border border-violet-400/20 bg-violet-500/10 p-8">
+          <div className="rounded-3xl border border-violet-400/20 bg-violet-500/10 p-6 sm:p-8">
             <h3 className="mb-4 text-2xl font-bold text-white">
               Objetivo profissional
             </h3>
@@ -325,7 +328,10 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section id="jornada" className="mx-auto max-w-6xl px-6 py-16">
+      <section
+        id="jornada"
+        className="mx-auto max-w-6xl px-4 py-12 sm:px-6 sm:py-16"
+      >
         <div className="mb-8">
           <h3 className="text-3xl font-bold">Minha jornada</h3>
           <p className="mt-2 max-w-3xl text-zinc-400">
@@ -341,7 +347,7 @@ export default function HomePage() {
               className="rounded-3xl border border-white/10 bg-white/5 p-6 transition hover:border-violet-400/30 hover:bg-white/10"
             >
               <div className="mb-4 flex items-center gap-3">
-                <div className="flex h-10 w-10 items-center justify-center rounded-full bg-violet-500/20 text-sm font-bold text-violet-300">
+                <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-violet-500/20 text-sm font-bold text-violet-300">
                   0{index + 1}
                 </div>
 
@@ -354,11 +360,14 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section id="tecnologias" className="mx-auto max-w-6xl px-6 py-16">
-        <div className="rounded-3xl border border-white/10 bg-white/5 p-8">
+      <section
+        id="tecnologias"
+        className="mx-auto max-w-6xl px-4 py-12 sm:px-6 sm:py-16"
+      >
+        <div className="rounded-3xl border border-white/10 bg-white/5 p-6 sm:p-8">
           <h3 className="mb-4 text-3xl font-bold">Tecnologias</h3>
 
-          <p className="mb-6 text-lg leading-8 text-zinc-300">
+          <p className="mb-6 text-base leading-8 text-zinc-300 sm:text-lg">
             Estas são algumas das tecnologias e ferramentas que estou estudando
             e praticando nos meus projetos.
           </p>
@@ -376,7 +385,10 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section id="projetos" className="mx-auto max-w-6xl px-6 py-16">
+      <section
+        id="projetos"
+        className="mx-auto max-w-6xl px-4 py-12 sm:px-6 sm:py-16"
+      >
         <div className="mb-8">
           <h3 className="text-3xl font-bold">Projetos</h3>
           <p className="mt-2 text-zinc-400">
@@ -419,12 +431,12 @@ export default function HomePage() {
                 ))}
               </div>
 
-              <div className="flex flex-wrap gap-4">
+              <div className="flex flex-col gap-3 sm:flex-row sm:flex-wrap sm:gap-4">
                 <a
                   href={project.github}
                   target="_blank"
                   rel="noreferrer"
-                  className="inline-flex items-center gap-2 rounded-xl bg-zinc-800 px-4 py-2 font-medium transition hover:bg-zinc-700"
+                  className="inline-flex items-center justify-center gap-2 rounded-xl bg-zinc-800 px-4 py-2 font-medium transition hover:bg-zinc-700"
                 >
                   <GithubIcon className="h-5 w-5" />
                   GitHub
@@ -434,7 +446,7 @@ export default function HomePage() {
                   href={project.demo}
                   target="_blank"
                   rel="noreferrer"
-                  className="inline-flex items-center gap-2 rounded-xl bg-violet-500 px-4 py-2 font-medium text-white transition hover:bg-violet-400"
+                  className="inline-flex items-center justify-center gap-2 rounded-xl bg-violet-500 px-4 py-2 font-medium text-white transition hover:bg-violet-400"
                 >
                   <ExternalLinkIcon className="h-4 w-4" />
                   Ver projeto
@@ -445,11 +457,14 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section id="contato" className="mx-auto max-w-6xl px-6 py-16">
-        <div className="rounded-3xl border border-white/10 bg-white/5 p-8">
+      <section
+        id="contato"
+        className="mx-auto max-w-6xl px-4 py-12 sm:px-6 sm:py-16"
+      >
+        <div className="rounded-3xl border border-white/10 bg-white/5 p-6 sm:p-8">
           <h3 className="mb-4 text-3xl font-bold">Contato</h3>
 
-          <p className="mb-3 text-lg leading-8 text-zinc-300">
+          <p className="mb-3 text-base leading-8 text-zinc-300 sm:text-lg">
             Estou construindo minha base como desenvolvedora e aberta a novas
             oportunidades para aprender, evoluir e contribuir com projetos.
           </p>
@@ -458,10 +473,10 @@ export default function HomePage() {
             Você pode falar comigo pelos links abaixo.
           </p>
 
-          <div className="flex flex-wrap gap-4">
+          <div className="flex flex-col gap-3 sm:flex-row sm:flex-wrap sm:gap-4">
             <a
               href="mailto:noellealmeidasantos@outlook.com"
-              className="inline-flex items-center gap-2 rounded-xl bg-violet-500 px-6 py-3 font-semibold text-white transition hover:bg-violet-400"
+              className="inline-flex items-center justify-center gap-2 rounded-xl bg-violet-500 px-6 py-3 font-semibold text-white transition hover:bg-violet-400"
             >
               <MailIcon className="h-5 w-5" />
               Enviar e-mail
@@ -471,7 +486,7 @@ export default function HomePage() {
               href="https://github.com/NoelleAlmeida"
               target="_blank"
               rel="noreferrer"
-              className="inline-flex items-center gap-2 rounded-xl border border-white/20 px-6 py-3 font-semibold text-white transition hover:bg-white/10"
+              className="inline-flex items-center justify-center gap-2 rounded-xl border border-white/20 px-6 py-3 font-semibold text-white transition hover:bg-white/10"
             >
               <GithubIcon className="h-5 w-5" />
               GitHub
@@ -481,7 +496,7 @@ export default function HomePage() {
               href="https://www.linkedin.com/in/noelle-almeida-dos-santos-97a92a3a5/"
               target="_blank"
               rel="noreferrer"
-              className="inline-flex items-center gap-2 rounded-xl border border-white/20 px-6 py-3 font-semibold text-white transition hover:bg-white/10"
+              className="inline-flex items-center justify-center gap-2 rounded-xl border border-white/20 px-6 py-3 font-semibold text-white transition hover:bg-white/10"
             >
               <LinkedinIcon className="h-5 w-5" />
               LinkedIn
@@ -491,7 +506,7 @@ export default function HomePage() {
       </section>
 
       <footer className="border-t border-white/10">
-        <div className="mx-auto flex max-w-6xl flex-col gap-4 px-6 py-8 text-sm text-zinc-400 md:flex-row md:items-center md:justify-between">
+        <div className="mx-auto flex max-w-6xl flex-col gap-4 px-4 py-8 text-sm text-zinc-400 sm:px-6 md:flex-row md:items-center md:justify-between">
           <p>
             © 2026 Noelle. Construído com Next.js, TypeScript e Tailwind CSS.
           </p>
