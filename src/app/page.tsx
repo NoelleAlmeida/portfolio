@@ -18,6 +18,18 @@ export default function HomePage() {
     },
   ];
 
+  const skills = [
+    "HTML",
+    "CSS",
+    "JavaScript",
+    "TypeScript",
+    "React",
+    "Next.js",
+    "Tailwind CSS",
+    "Git",
+    "GitHub",
+  ];
+
   return (
     <main className="min-h-screen bg-zinc-950 text-white">
       <section className="border-b border-white/10">
@@ -27,6 +39,9 @@ export default function HomePage() {
           <nav className="hidden gap-6 text-sm text-zinc-300 md:flex">
             <a href="#sobre" className="transition hover:text-white">
               Sobre
+            </a>
+            <a href="#tecnologias" className="transition hover:text-white">
+              Tecnologias
             </a>
             <a href="#projetos" className="transition hover:text-white">
               Projetos
@@ -84,6 +99,28 @@ export default function HomePage() {
             foco em desenvolvimento web, estudando React, TypeScript, Tailwind
             CSS e outras tecnologias do ecossistema JavaScript.
           </p>
+        </div>
+      </section>
+
+      <section id="tecnologias" className="mx-auto max-w-6xl px-6 py-16">
+        <div className="rounded-3xl border border-white/10 bg-white/5 p-8">
+          <h3 className="mb-4 text-3xl font-bold">Tecnologias</h3>
+
+          <p className="mb-6 text-lg leading-8 text-zinc-300">
+            Estas são algumas das tecnologias e ferramentas que estou estudando
+            e praticando nos meus projetos.
+          </p>
+
+          <div className="flex flex-wrap gap-3">
+            {skills.map((skill) => (
+              <span
+                key={skill}
+                className="rounded-full border border-violet-400/20 bg-violet-500/10 px-4 py-2 text-sm font-medium text-violet-200"
+              >
+                {skill}
+              </span>
+            ))}
+          </div>
         </div>
       </section>
 
