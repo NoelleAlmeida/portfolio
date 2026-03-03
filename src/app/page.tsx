@@ -116,40 +116,128 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section className="mx-auto flex min-h-[75vh] max-w-6xl items-center px-6 py-16">
-        <div className="max-w-3xl">
-          <p className="mb-4 text-sm font-medium tracking-[0.2em] text-zinc-400 uppercase">
-            Desenvolvedora full stack em formação
-          </p>
+      <section className="relative overflow-hidden">
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_left,rgba(168,85,247,0.18),transparent_35%),radial-gradient(circle_at_right,rgba(59,130,246,0.12),transparent_30%)]" />
 
-          <h2 className="mb-6 text-4xl leading-tight font-extrabold sm:text-6xl">
-            Olá, eu sou <span className="text-violet-400">Noelle</span>
-          </h2>
+        <div className="relative mx-auto grid min-h-[80vh] max-w-6xl gap-10 px-6 py-16 lg:grid-cols-[1.3fr_0.7fr] lg:items-center">
+          <div>
+            <div className="mb-6 flex flex-wrap gap-3">
+              <span className="rounded-full border border-violet-400/20 bg-violet-500/10 px-4 py-2 text-sm font-medium text-violet-200">
+                Desenvolvedora full stack em formação
+              </span>
 
-          <p className="mb-8 text-lg leading-8 text-zinc-300">
-            Estudando React, TypeScript e Tailwind CSS. Construindo projetos na
-            prática, aprendendo um passo de cada vez e desenvolvendo minha base
-            no desenvolvimento web moderno.
-          </p>
+              <span className="rounded-full border border-white/10 bg-white/5 px-4 py-2 text-sm text-zinc-300">
+                Construindo projetos reais
+              </span>
+            </div>
 
-          <div className="flex flex-wrap gap-4">
-            <a
-              href="#projetos"
-              className="inline-flex items-center gap-2 rounded-xl bg-violet-500 px-6 py-3 font-semibold text-white transition hover:bg-violet-400"
-            >
-              <ExternalLinkIcon className="h-4 w-4" />
-              Ver projetos
-            </a>
+            <h2 className="mb-6 max-w-4xl text-4xl leading-tight font-extrabold sm:text-6xl">
+              Transformando estudo em{" "}
+              <span className="text-violet-400">projetos práticos</span> e
+              evolução constante.
+            </h2>
 
-            <a
-              href="https://github.com/NoelleAlmeida"
-              target="_blank"
-              rel="noreferrer"
-              className="inline-flex items-center gap-2 rounded-xl border border-white/20 px-6 py-3 font-semibold text-white transition hover:bg-white/10"
-            >
-              <GithubIcon className="h-5 w-5" />
-              GitHub
-            </a>
+            <p className="mb-8 max-w-3xl text-lg leading-8 text-zinc-300">
+              Olá, eu sou{" "}
+              <span className="font-semibold text-white">Noelle</span>. Estou
+              estudando React, TypeScript e Tailwind CSS, criando projetos na
+              prática e construindo minha base no desenvolvimento web moderno.
+            </p>
+
+            <div className="mb-8 flex flex-wrap gap-4">
+              <a
+                href="#projetos"
+                className="inline-flex items-center gap-2 rounded-xl bg-violet-500 px-6 py-3 font-semibold text-white transition hover:bg-violet-400"
+              >
+                <ExternalLinkIcon className="h-4 w-4" />
+                Ver projetos
+              </a>
+
+              <a
+                href="https://github.com/NoelleAlmeida"
+                target="_blank"
+                rel="noreferrer"
+                className="inline-flex items-center gap-2 rounded-xl border border-white/20 px-6 py-3 font-semibold text-white transition hover:bg-white/10"
+              >
+                <GithubIcon className="h-5 w-5" />
+                GitHub
+              </a>
+            </div>
+
+            <div className="flex flex-wrap gap-3 text-sm text-zinc-400">
+              <span className="rounded-full border border-white/10 bg-white/5 px-4 py-2">
+                React
+              </span>
+              <span className="rounded-full border border-white/10 bg-white/5 px-4 py-2">
+                TypeScript
+              </span>
+              <span className="rounded-full border border-white/10 bg-white/5 px-4 py-2">
+                Tailwind CSS
+              </span>
+              <span className="rounded-full border border-white/10 bg-white/5 px-4 py-2">
+                Next.js
+              </span>
+            </div>
+          </div>
+
+          <div className="lg:justify-self-end">
+            <div className="rounded-3xl border border-white/10 bg-white/5 p-6 shadow-2xl shadow-violet-950/20 backdrop-blur">
+              <div className="mb-6 flex items-center gap-4">
+                <div className="flex h-14 w-14 items-center justify-center rounded-2xl bg-violet-500/20 text-2xl font-bold text-violet-300">
+                  N
+                </div>
+
+                <div>
+                  <p className="text-lg font-semibold text-white">Noelle</p>
+                  <p className="text-sm text-zinc-400">
+                    Portfólio em construção
+                  </p>
+                </div>
+              </div>
+
+              <div className="space-y-4">
+                <div className="rounded-2xl border border-white/10 bg-zinc-900/60 p-4">
+                  <p className="text-sm text-zinc-400">Foco atual</p>
+                  <p className="mt-1 font-semibold text-white">
+                    React, TypeScript e Tailwind CSS
+                  </p>
+                </div>
+
+                <div className="rounded-2xl border border-white/10 bg-zinc-900/60 p-4">
+                  <p className="text-sm text-zinc-400">Objetivo</p>
+                  <p className="mt-1 font-semibold text-white">
+                    Evoluir como desenvolvedora full stack
+                  </p>
+                </div>
+
+                <div className="rounded-2xl border border-white/10 bg-zinc-900/60 p-4">
+                  <p className="text-sm text-zinc-400">Status</p>
+                  <p className="mt-1 font-semibold text-emerald-400">
+                    Aprendendo e publicando projetos
+                  </p>
+                </div>
+              </div>
+
+              <div className="mt-6 grid grid-cols-2 gap-3">
+                <a
+                  href="mailto:noellealmeidasantos@outlook.com"
+                  className="inline-flex items-center justify-center gap-2 rounded-xl border border-white/10 bg-white/5 px-4 py-3 text-sm font-medium text-white transition hover:bg-white/10"
+                >
+                  <MailIcon className="h-4 w-4" />
+                  E-mail
+                </a>
+
+                <a
+                  href="https://www.linkedin.com/in/noelle-almeida-dos-santos-97a92a3a5/"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="inline-flex items-center justify-center gap-2 rounded-xl border border-white/10 bg-white/5 px-4 py-3 text-sm font-medium text-white transition hover:bg-white/10"
+                >
+                  <LinkedinIcon className="h-4 w-4" />
+                  LinkedIn
+                </a>
+              </div>
+            </div>
           </div>
         </div>
       </section>
