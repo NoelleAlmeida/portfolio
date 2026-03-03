@@ -97,6 +97,29 @@ export default function HomePage() {
     "GitHub",
   ];
 
+  const journey = [
+    {
+      title: "Começo da jornada",
+      description:
+        "Comecei estudando programação do zero, aprendendo na prática e construindo minha base com muita dedicação.",
+    },
+    {
+      title: "Primeiro projeto publicado",
+      description:
+        "Consegui finalizar e publicar meu primeiro projeto, um ToDo App, colocando em prática o que venho estudando.",
+    },
+    {
+      title: "Construindo meu portfólio",
+      description:
+        "Agora estou desenvolvendo meu portfólio para apresentar minha evolução, meus projetos e meu objetivo de crescer como full stack.",
+    },
+    {
+      title: "Próximos passos",
+      description:
+        "Quero continuar estudando bastante, criar novos projetos e avançar cada vez mais para atuar como desenvolvedora full stack.",
+    },
+  ];
+
   return (
     <main className="min-h-screen bg-zinc-950 text-white">
       <section className="border-b border-white/10">
@@ -106,6 +129,9 @@ export default function HomePage() {
           <nav className="hidden gap-6 text-sm text-zinc-300 md:flex">
             <a href="#sobre" className="transition hover:text-white">
               Sobre
+            </a>
+            <a href="#jornada" className="transition hover:text-white">
+              Jornada
             </a>
             <a href="#tecnologias" className="transition hover:text-white">
               Tecnologias
@@ -296,6 +322,35 @@ export default function HomePage() {
               </div>
             </div>
           </div>
+        </div>
+      </section>
+
+      <section id="jornada" className="mx-auto max-w-6xl px-6 py-16">
+        <div className="mb-8">
+          <h3 className="text-3xl font-bold">Minha jornada</h3>
+          <p className="mt-2 max-w-3xl text-zinc-400">
+            Um resumo do caminho que estou construindo na programação,
+            estudando, praticando e transformando aprendizado em projetos reais.
+          </p>
+        </div>
+
+        <div className="grid gap-6 md:grid-cols-2">
+          {journey.map((item, index) => (
+            <article
+              key={item.title}
+              className="rounded-3xl border border-white/10 bg-white/5 p-6 transition hover:border-violet-400/30 hover:bg-white/10"
+            >
+              <div className="mb-4 flex items-center gap-3">
+                <div className="flex h-10 w-10 items-center justify-center rounded-full bg-violet-500/20 text-sm font-bold text-violet-300">
+                  0{index + 1}
+                </div>
+
+                <h4 className="text-xl font-bold text-white">{item.title}</h4>
+              </div>
+
+              <p className="leading-7 text-zinc-300">{item.description}</p>
+            </article>
+          ))}
         </div>
       </section>
 
