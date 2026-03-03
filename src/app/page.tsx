@@ -1,3 +1,66 @@
+function GithubIcon({ className = "h-5 w-5" }: { className?: string }) {
+  return (
+    <svg
+      viewBox="0 0 24 24"
+      fill="currentColor"
+      aria-hidden="true"
+      className={className}
+    >
+      <path d="M12 2C6.477 2 2 6.589 2 12.248c0 4.526 2.865 8.367 6.839 9.722.5.096.682-.222.682-.495 0-.245-.009-.894-.014-1.754-2.782.615-3.369-1.37-3.369-1.37-.455-1.177-1.11-1.49-1.11-1.49-.908-.637.069-.624.069-.624 1.004.072 1.532 1.057 1.532 1.057.892 1.562 2.341 1.111 2.91.85.091-.664.349-1.112.635-1.368-2.22-.259-4.555-1.139-4.555-5.068 0-1.119.39-2.034 1.029-2.751-.103-.259-.446-1.301.098-2.713 0 0 .84-.276 2.75 1.051A9.352 9.352 0 0 1 12 7.179c.85.004 1.706.118 2.505.346 1.909-1.327 2.748-1.051 2.748-1.051.546 1.412.202 2.454.1 2.713.64.717 1.027 1.632 1.027 2.751 0 3.939-2.338 4.806-4.566 5.06.359.318.678.944.678 1.903 0 1.374-.012 2.481-.012 2.819 0 .275.18.595.688.494C19.138 20.61 22 16.772 22 12.248 22 6.589 17.523 2 12 2Z" />
+    </svg>
+  );
+}
+
+function LinkedinIcon({ className = "h-5 w-5" }: { className?: string }) {
+  return (
+    <svg
+      viewBox="0 0 24 24"
+      fill="currentColor"
+      aria-hidden="true"
+      className={className}
+    >
+      <path d="M6.94 8.5H3.56V20h3.38V8.5Zm.22-3.56C7.15 3.87 6.28 3 5.28 3S3.4 3.87 3.4 4.94c0 1.05.86 1.9 1.86 1.9h.02c1 0 1.88-.85 1.88-1.9ZM20.6 13.02c0-3.1-1.65-4.54-3.85-4.54-1.78 0-2.57.99-3.01 1.68V8.5H10.4c.04 1.09 0 11.5 0 11.5h3.35v-6.42c0-.34.02-.68.12-.92.27-.68.87-1.39 1.89-1.39 1.34 0 1.88 1.05 1.88 2.6V20H21V13.02h-.4Z" />
+    </svg>
+  );
+}
+
+function MailIcon({ className = "h-5 w-5" }: { className?: string }) {
+  return (
+    <svg
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="1.8"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      aria-hidden="true"
+      className={className}
+    >
+      <path d="M4 6h16v12H4z" />
+      <path d="m4 7 8 6 8-6" />
+    </svg>
+  );
+}
+
+function ExternalLinkIcon({ className = "h-4 w-4" }: { className?: string }) {
+  return (
+    <svg
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="1.8"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      aria-hidden="true"
+      className={className}
+    >
+      <path d="M14 5h5v5" />
+      <path d="M10 14 19 5" />
+      <path d="M19 14v5H5V5h5" />
+    </svg>
+  );
+}
+
 export default function HomePage() {
   const projects = [
     {
@@ -72,8 +135,9 @@ export default function HomePage() {
           <div className="flex flex-wrap gap-4">
             <a
               href="#projetos"
-              className="rounded-xl bg-violet-500 px-6 py-3 font-semibold text-white transition hover:bg-violet-400"
+              className="inline-flex items-center gap-2 rounded-xl bg-violet-500 px-6 py-3 font-semibold text-white transition hover:bg-violet-400"
             >
+              <ExternalLinkIcon className="h-4 w-4" />
               Ver projetos
             </a>
 
@@ -81,8 +145,9 @@ export default function HomePage() {
               href="https://github.com/NoelleAlmeida"
               target="_blank"
               rel="noreferrer"
-              className="rounded-xl border border-white/20 px-6 py-3 font-semibold text-white transition hover:bg-white/10"
+              className="inline-flex items-center gap-2 rounded-xl border border-white/20 px-6 py-3 font-semibold text-white transition hover:bg-white/10"
             >
+              <GithubIcon className="h-5 w-5" />
               GitHub
             </a>
           </div>
@@ -160,8 +225,9 @@ export default function HomePage() {
                   href={project.github}
                   target="_blank"
                   rel="noreferrer"
-                  className="rounded-xl bg-zinc-800 px-4 py-2 font-medium transition hover:bg-zinc-700"
+                  className="inline-flex items-center gap-2 rounded-xl bg-zinc-800 px-4 py-2 font-medium transition hover:bg-zinc-700"
                 >
+                  <GithubIcon className="h-5 w-5" />
                   GitHub
                 </a>
 
@@ -169,8 +235,9 @@ export default function HomePage() {
                   href={project.demo}
                   target="_blank"
                   rel="noreferrer"
-                  className="rounded-xl bg-violet-500 px-4 py-2 font-medium transition hover:bg-violet-400"
+                  className="inline-flex items-center gap-2 rounded-xl bg-violet-500 px-4 py-2 font-medium transition hover:bg-violet-400"
                 >
+                  <ExternalLinkIcon className="h-4 w-4" />
                   Ver projeto
                 </a>
               </div>
@@ -195,8 +262,9 @@ export default function HomePage() {
           <div className="flex flex-wrap gap-4">
             <a
               href="mailto:noellealmeidasantos@outlook.com"
-              className="rounded-xl bg-violet-500 px-6 py-3 font-semibold text-white transition hover:bg-violet-400"
+              className="inline-flex items-center gap-2 rounded-xl bg-violet-500 px-6 py-3 font-semibold text-white transition hover:bg-violet-400"
             >
+              <MailIcon className="h-5 w-5" />
               Enviar e-mail
             </a>
 
@@ -204,8 +272,9 @@ export default function HomePage() {
               href="https://github.com/NoelleAlmeida"
               target="_blank"
               rel="noreferrer"
-              className="rounded-xl border border-white/20 px-6 py-3 font-semibold text-white transition hover:bg-white/10"
+              className="inline-flex items-center gap-2 rounded-xl border border-white/20 px-6 py-3 font-semibold text-white transition hover:bg-white/10"
             >
+              <GithubIcon className="h-5 w-5" />
               GitHub
             </a>
 
@@ -213,13 +282,52 @@ export default function HomePage() {
               href="https://www.linkedin.com/in/noelle-almeida-dos-santos-97a92a3a5/"
               target="_blank"
               rel="noreferrer"
-              className="rounded-xl border border-white/20 px-6 py-3 font-semibold text-white transition hover:bg-white/10"
+              className="inline-flex items-center gap-2 rounded-xl border border-white/20 px-6 py-3 font-semibold text-white transition hover:bg-white/10"
             >
+              <LinkedinIcon className="h-5 w-5" />
               LinkedIn
             </a>
           </div>
         </div>
       </section>
+
+      <footer className="border-t border-white/10">
+        <div className="mx-auto flex max-w-6xl flex-col gap-4 px-6 py-8 text-sm text-zinc-400 md:flex-row md:items-center md:justify-between">
+          <p>
+            © 2026 Noelle. Construído com Next.js, TypeScript e Tailwind CSS.
+          </p>
+
+          <div className="flex flex-wrap gap-5">
+            <a
+              href="https://github.com/NoelleAlmeida"
+              target="_blank"
+              rel="noreferrer"
+              className="inline-flex items-center gap-2 transition hover:text-white"
+            >
+              <GithubIcon className="h-4 w-4" />
+              GitHub
+            </a>
+
+            <a
+              href="https://www.linkedin.com/in/noelle-almeida-dos-santos-97a92a3a5/"
+              target="_blank"
+              rel="noreferrer"
+              className="inline-flex items-center gap-2 transition hover:text-white"
+            >
+              <LinkedinIcon className="h-4 w-4" />
+              LinkedIn
+            </a>
+
+            <a
+              href="mailto:noellealmeidasantos@outlook.com"
+              className="inline-flex items-center gap-2 transition hover:text-white"
+            >
+              <MailIcon className="h-4 w-4" />
+              E-mail
+            </a>
+          </div>
+        </div>
+      </footer>
     </main>
   );
 }
