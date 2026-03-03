@@ -70,6 +70,8 @@ export default function HomePage() {
       github: "https://github.com/NoelleAlmeida/ToDo",
       demo: "https://to-do-noelle.vercel.app/",
       techs: ["React", "TypeScript", "CSS"],
+      highlight: "Projeto em destaque",
+      status: "Publicado",
     },
     {
       title: "Portfólio",
@@ -78,6 +80,8 @@ export default function HomePage() {
       github: "https://github.com/NoelleAlmeida/portfolio",
       demo: "https://portfolio-eta-five-29.vercel.app",
       techs: ["Next.js", "TypeScript", "Tailwind CSS"],
+      highlight: "Projeto pessoal",
+      status: "Em evolução",
     },
   ];
 
@@ -289,11 +293,23 @@ export default function HomePage() {
           {projects.map((project) => (
             <article
               key={project.title}
-              className="rounded-3xl border border-white/10 bg-white/5 p-6 transition hover:border-violet-400/40 hover:bg-white/10"
+              className="group rounded-3xl border border-white/10 bg-gradient-to-b from-white/8 to-white/5 p-6 transition duration-300 hover:-translate-y-1 hover:border-violet-400/40 hover:shadow-xl hover:shadow-violet-950/20"
             >
-              <h4 className="mb-3 text-2xl font-bold">{project.title}</h4>
+              <div className="mb-5 flex flex-wrap items-center justify-between gap-3">
+                <span className="rounded-full border border-violet-400/20 bg-violet-500/10 px-3 py-1 text-xs font-semibold tracking-wide text-violet-200 uppercase">
+                  {project.highlight}
+                </span>
 
-              <p className="mb-4 leading-7 text-zinc-300">
+                <span className="rounded-full border border-emerald-400/20 bg-emerald-500/10 px-3 py-1 text-xs font-semibold text-emerald-300">
+                  {project.status}
+                </span>
+              </div>
+
+              <h4 className="mb-3 text-2xl font-bold text-white">
+                {project.title}
+              </h4>
+
+              <p className="mb-5 min-h-[84px] leading-7 text-zinc-300">
                 {project.description}
               </p>
 
@@ -323,7 +339,7 @@ export default function HomePage() {
                   href={project.demo}
                   target="_blank"
                   rel="noreferrer"
-                  className="inline-flex items-center gap-2 rounded-xl bg-violet-500 px-4 py-2 font-medium transition hover:bg-violet-400"
+                  className="inline-flex items-center gap-2 rounded-xl bg-violet-500 px-4 py-2 font-medium text-white transition hover:bg-violet-400"
                 >
                   <ExternalLinkIcon className="h-4 w-4" />
                   Ver projeto
