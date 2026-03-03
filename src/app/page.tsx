@@ -3,15 +3,15 @@ export default function HomePage() {
     {
       title: "ToDo App",
       description:
-        "Meu primeiro projeto de gerenciador de tarefas, criado para praticar lógica, componentes e organização de código.",
-      github: "https://github.com/seu-usuario/todo-app",
-      demo: "https://seu-projeto.vercel.app",
+        "Meu primeiro projeto como desenvolvedora, criado para praticar organização de tarefas, componentes e estrutura de aplicação.",
+      github: "https://github.com/NoelleAlmeida/ToDo",
+      demo: "#",
     },
     {
       title: "Portfólio",
       description:
-        "Este portfólio está sendo desenvolvido com Next.js, TypeScript e Tailwind CSS para apresentar meus projetos e minha evolução.",
-      github: "https://github.com/seu-usuario/portfolio",
+        "Meu portfólio pessoal desenvolvido com Next.js, TypeScript e Tailwind CSS para apresentar minha evolução, estudos e projetos.",
+      github: "https://github.com/NoelleAlmeida/portfolio",
       demo: "#",
     },
   ];
@@ -20,7 +20,7 @@ export default function HomePage() {
     <main className="min-h-screen bg-zinc-950 text-white">
       <section className="border-b border-white/10">
         <div className="mx-auto flex max-w-6xl items-center justify-between px-6 py-6">
-          <h1 className="text-xl font-bold">Seu Nome</h1>
+          <h1 className="text-xl font-bold">Noelle</h1>
 
           <nav className="hidden gap-6 text-sm text-zinc-300 md:flex">
             <a href="#sobre" className="transition hover:text-white">
@@ -39,18 +39,16 @@ export default function HomePage() {
       <section className="mx-auto flex min-h-[70vh] max-w-6xl items-center px-6 py-16">
         <div className="max-w-3xl">
           <p className="mb-4 text-sm font-medium tracking-[0.2em] text-zinc-400 uppercase">
-            Desenvolvedor em formação
+            Desenvolvedora full stack em formação
           </p>
 
           <h2 className="mb-6 text-4xl leading-tight font-extrabold sm:text-6xl">
-            Olá, eu sou <span className="text-violet-400">Seu Nome</span>
+            Olá, eu sou <span className="text-violet-400">Noelle</span>
           </h2>
 
           <p className="mb-8 text-lg leading-8 text-zinc-300">
-            Estou estudando programação do zero e construindo meus primeiros
-            projetos para evoluir na prática. Este portfólio foi criado para
-            mostrar minha caminhada, meus estudos e os projetos que venho
-            desenvolvendo.
+            Estudando React, TypeScript e Tailwind CSS. Construindo projetos na
+            prática e evoluindo um passo de cada vez na programação.
           </p>
 
           <div className="flex flex-wrap gap-4">
@@ -62,7 +60,7 @@ export default function HomePage() {
             </a>
 
             <a
-              href="https://github.com/seu-usuario"
+              href="https://github.com/NoelleAlmeida"
               target="_blank"
               rel="noreferrer"
               className="rounded-xl border border-white/20 px-6 py-3 font-semibold text-white transition hover:bg-white/10"
@@ -76,11 +74,12 @@ export default function HomePage() {
       <section id="sobre" className="mx-auto max-w-6xl px-6 py-16">
         <div className="rounded-3xl border border-white/10 bg-white/5 p-8">
           <h3 className="mb-4 text-3xl font-bold">Sobre mim</h3>
+
           <p className="text-lg leading-8 text-zinc-300">
-            Sou iniciante na programação e estou aprendendo um passo de cada
-            vez. Já consegui criar e publicar meu primeiro projeto, um ToDo App,
-            e agora estou estudando tecnologias modernas como Next.js,
-            TypeScript e Tailwind CSS para evoluir cada vez mais.
+            Sou iniciante na programação e estou construindo minha jornada na
+            prática, criando projetos para aprender cada vez mais. Meu foco
+            atual está em desenvolvimento web, com estudos em React, TypeScript,
+            Tailwind CSS e tecnologias modernas do ecossistema JavaScript.
           </p>
         </div>
       </section>
@@ -89,7 +88,7 @@ export default function HomePage() {
         <div className="mb-8">
           <h3 className="text-3xl font-bold">Projetos</h3>
           <p className="mt-2 text-zinc-400">
-            Alguns projetos que já criei e outros que estou desenvolvendo.
+            Projetos que mostram minha evolução e prática no desenvolvimento.
           </p>
         </div>
 
@@ -134,34 +133,18 @@ export default function HomePage() {
           <h3 className="mb-4 text-3xl font-bold">Contato</h3>
 
           <p className="mb-6 text-lg leading-8 text-zinc-300">
-            Estou em processo de aprendizado e aberto a oportunidades para
-            crescer como desenvolvedor.
+            Estou construindo minha base como desenvolvedora e aberta a aprender
+            mais a cada projeto.
           </p>
 
           <div className="flex flex-wrap gap-4">
             <a
-              href="mailto:seuemail@email.com"
-              className="rounded-xl bg-violet-500 px-6 py-3 font-semibold text-white transition hover:bg-violet-400"
-            >
-              Enviar e-mail
-            </a>
-
-            <a
-              href="https://github.com/seu-usuario"
+              href="https://github.com/NoelleAlmeida"
               target="_blank"
               rel="noreferrer"
               className="rounded-xl border border-white/20 px-6 py-3 font-semibold text-white transition hover:bg-white/10"
             >
               Meu GitHub
-            </a>
-
-            <a
-              href="https://www.linkedin.com/in/seu-linkedin"
-              target="_blank"
-              rel="noreferrer"
-              className="rounded-xl border border-white/20 px-6 py-3 font-semibold text-white transition hover:bg-white/10"
-            >
-              LinkedIn
             </a>
           </div>
         </div>
