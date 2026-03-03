@@ -3,16 +3,18 @@ export default function HomePage() {
     {
       title: "ToDo App",
       description:
-        "Meu primeiro projeto como desenvolvedora, criado para praticar organização de tarefas, componentes e estrutura de aplicação.",
+        "Meu primeiro projeto publicado. Criei essa aplicação para praticar organização de tarefas, estrutura de projeto, componentes e deploy.",
       github: "https://github.com/NoelleAlmeida/ToDo",
-      demo: "#",
+      demo: "https://to-do-noelle.vercel.app/",
+      techs: ["React", "TypeScript", "CSS"],
     },
     {
       title: "Portfólio",
       description:
         "Meu portfólio pessoal desenvolvido com Next.js, TypeScript e Tailwind CSS para apresentar minha evolução, estudos e projetos.",
       github: "https://github.com/NoelleAlmeida/portfolio",
-      demo: "#",
+      demo: "https://portfolio-eta-five-29.vercel.app",
+      techs: ["Next.js", "TypeScript", "Tailwind CSS"],
     },
   ];
 
@@ -36,7 +38,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section className="mx-auto flex min-h-[70vh] max-w-6xl items-center px-6 py-16">
+      <section className="mx-auto flex min-h-[75vh] max-w-6xl items-center px-6 py-16">
         <div className="max-w-3xl">
           <p className="mb-4 text-sm font-medium tracking-[0.2em] text-zinc-400 uppercase">
             Desenvolvedora full stack em formação
@@ -48,7 +50,8 @@ export default function HomePage() {
 
           <p className="mb-8 text-lg leading-8 text-zinc-300">
             Estudando React, TypeScript e Tailwind CSS. Construindo projetos na
-            prática e evoluindo um passo de cada vez na programação.
+            prática, aprendendo um passo de cada vez e desenvolvendo minha base
+            no desenvolvimento web moderno.
           </p>
 
           <div className="flex flex-wrap gap-4">
@@ -77,9 +80,9 @@ export default function HomePage() {
 
           <p className="text-lg leading-8 text-zinc-300">
             Sou iniciante na programação e estou construindo minha jornada na
-            prática, criando projetos para aprender cada vez mais. Meu foco
-            atual está em desenvolvimento web, com estudos em React, TypeScript,
-            Tailwind CSS e tecnologias modernas do ecossistema JavaScript.
+            prática. Já publiquei meus primeiros projetos e sigo evoluindo com
+            foco em desenvolvimento web, estudando React, TypeScript, Tailwind
+            CSS e outras tecnologias do ecossistema JavaScript.
           </p>
         </div>
       </section>
@@ -88,7 +91,7 @@ export default function HomePage() {
         <div className="mb-8">
           <h3 className="text-3xl font-bold">Projetos</h3>
           <p className="mt-2 text-zinc-400">
-            Projetos que mostram minha evolução e prática no desenvolvimento.
+            Projetos que mostram minha evolução, prática e aprendizado.
           </p>
         </div>
 
@@ -100,11 +103,22 @@ export default function HomePage() {
             >
               <h4 className="mb-3 text-2xl font-bold">{project.title}</h4>
 
-              <p className="mb-6 leading-7 text-zinc-300">
+              <p className="mb-4 leading-7 text-zinc-300">
                 {project.description}
               </p>
 
-              <div className="flex gap-4">
+              <div className="mb-6 flex flex-wrap gap-2">
+                {project.techs.map((tech) => (
+                  <span
+                    key={tech}
+                    className="rounded-full border border-white/10 bg-zinc-900 px-3 py-1 text-sm text-zinc-300"
+                  >
+                    {tech}
+                  </span>
+                ))}
+              </div>
+
+              <div className="flex flex-wrap gap-4">
                 <a
                   href={project.github}
                   target="_blank"
@@ -134,7 +148,7 @@ export default function HomePage() {
 
           <p className="mb-6 text-lg leading-8 text-zinc-300">
             Estou construindo minha base como desenvolvedora e aberta a aprender
-            mais a cada projeto.
+            mais a cada projeto e desafio.
           </p>
 
           <div className="flex flex-wrap gap-4">
