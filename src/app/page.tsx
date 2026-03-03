@@ -83,7 +83,7 @@ export default function HomePage() {
     {
       title: "ToDo App",
       description:
-        "Meu primeiro projeto publicado. Criei essa aplicação para praticar organização de tarefas, estrutura de projeto, componentes e deploy.",
+        "Meu primeiro projeto publicado. Criei essa aplicação para praticar organização de tarefas, componentes, estrutura de projeto e deploy.",
       github: "https://github.com/NoelleAlmeida/ToDo",
       demo: "https://to-do-noelle.vercel.app/",
       techs: ["React", "TypeScript", "CSS"],
@@ -93,7 +93,7 @@ export default function HomePage() {
     {
       title: "Portfólio",
       description:
-        "Meu portfólio pessoal desenvolvido com Next.js, TypeScript e Tailwind CSS para apresentar minha evolução, estudos e projetos.",
+        "Meu portfólio pessoal desenvolvido com Next.js, TypeScript e Tailwind CSS para apresentar minha evolução, meus estudos e meus projetos.",
       github: "https://github.com/NoelleAlmeida/portfolio",
       demo: "https://portfolio-eta-five-29.vercel.app",
       techs: ["Next.js", "TypeScript", "Tailwind CSS"],
@@ -139,9 +139,11 @@ export default function HomePage() {
 
   return (
     <main id="top" className="min-h-screen bg-zinc-950 text-white">
-      <section className="border-b border-white/10">
-        <div className="mx-auto flex max-w-6xl items-center justify-between px-4 py-5 sm:px-6 sm:py-6">
-          <h1 className="text-xl font-bold">Noelle</h1>
+      <header className="sticky top-0 z-20 border-b border-white/10 bg-zinc-950/80 backdrop-blur">
+        <div className="mx-auto flex max-w-6xl items-center justify-between px-4 py-5 sm:px-6">
+          <a href="#top" className="text-xl font-bold tracking-tight">
+            Noelle
+          </a>
 
           <nav className="hidden gap-6 text-sm text-zinc-300 md:flex">
             <a href="#sobre" className="transition hover:text-white">
@@ -161,7 +163,7 @@ export default function HomePage() {
             </a>
           </nav>
         </div>
-      </section>
+      </header>
 
       <section className="relative overflow-hidden">
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_left,rgba(168,85,247,0.18),transparent_35%),radial-gradient(circle_at_right,rgba(59,130,246,0.12),transparent_30%)]" />
@@ -178,11 +180,11 @@ export default function HomePage() {
               </span>
             </div>
 
-            <h2 className="mb-6 max-w-4xl text-4xl leading-tight font-extrabold sm:text-5xl lg:text-6xl">
+            <h1 className="mb-6 max-w-4xl text-4xl leading-tight font-extrabold sm:text-5xl lg:text-6xl">
               Transformando estudo em{" "}
               <span className="text-violet-400">projetos práticos</span> e
               evolução constante.
-            </h2>
+            </h1>
 
             <p className="mb-8 max-w-3xl text-base leading-8 text-zinc-300 sm:text-lg">
               Olá, eu sou{" "}
@@ -194,7 +196,7 @@ export default function HomePage() {
             <div className="mb-8 flex flex-col gap-3 sm:flex-row sm:flex-wrap sm:gap-4">
               <a
                 href="#projetos"
-                className="inline-flex items-center justify-center gap-2 rounded-xl bg-violet-500 px-6 py-3 font-semibold text-white transition hover:bg-violet-400 sm:w-auto"
+                className="inline-flex items-center justify-center gap-2 rounded-xl bg-violet-500 px-6 py-3 font-semibold text-white transition hover:bg-violet-400"
               >
                 <ExternalLinkIcon className="h-4 w-4" />
                 Ver projetos
@@ -204,7 +206,7 @@ export default function HomePage() {
                 href="https://github.com/NoelleAlmeida"
                 target="_blank"
                 rel="noreferrer"
-                className="inline-flex items-center justify-center gap-2 rounded-xl border border-white/20 px-6 py-3 font-semibold text-white transition hover:bg-white/10 sm:w-auto"
+                className="inline-flex items-center justify-center gap-2 rounded-xl border border-white/20 px-6 py-3 font-semibold text-white transition hover:bg-white/10"
               >
                 <GithubIcon className="h-5 w-5" />
                 GitHub
@@ -295,7 +297,7 @@ export default function HomePage() {
       >
         <div className="grid gap-6 lg:grid-cols-[1.2fr_0.8fr]">
           <div className="rounded-3xl border border-white/10 bg-white/5 p-6 sm:p-8">
-            <h3 className="mb-4 text-3xl font-bold">Sobre mim</h3>
+            <h2 className="mb-4 text-3xl font-bold">Sobre mim</h2>
 
             <p className="mb-5 text-base leading-8 text-zinc-300 sm:text-lg">
               Sou uma desenvolvedora em formação, com foco em me tornar cada vez
@@ -315,9 +317,9 @@ export default function HomePage() {
           </div>
 
           <div className="rounded-3xl border border-violet-400/20 bg-violet-500/10 p-6 sm:p-8">
-            <h3 className="mb-4 text-2xl font-bold text-white">
+            <h2 className="mb-4 text-2xl font-bold text-white">
               Objetivo profissional
-            </h3>
+            </h2>
 
             <p className="mb-4 leading-7 text-violet-100">
               Busco crescer como desenvolvedora full stack, estudando bastante,
@@ -350,7 +352,7 @@ export default function HomePage() {
         className="mx-auto max-w-6xl px-4 py-12 sm:px-6 sm:py-16"
       >
         <div className="mb-8">
-          <h3 className="text-3xl font-bold">Minha jornada</h3>
+          <h2 className="text-3xl font-bold">Minha jornada</h2>
           <p className="mt-2 max-w-3xl text-zinc-400">
             Um resumo do caminho que estou construindo na programação,
             estudando, praticando e transformando aprendizado em projetos reais.
@@ -368,7 +370,7 @@ export default function HomePage() {
                   0{index + 1}
                 </div>
 
-                <h4 className="text-xl font-bold text-white">{item.title}</h4>
+                <h3 className="text-xl font-bold text-white">{item.title}</h3>
               </div>
 
               <p className="leading-7 text-zinc-300">{item.description}</p>
@@ -382,7 +384,7 @@ export default function HomePage() {
         className="mx-auto max-w-6xl px-4 py-12 sm:px-6 sm:py-16"
       >
         <div className="rounded-3xl border border-white/10 bg-white/5 p-6 sm:p-8">
-          <h3 className="mb-4 text-3xl font-bold">Tecnologias</h3>
+          <h2 className="mb-4 text-3xl font-bold">Tecnologias</h2>
 
           <p className="mb-6 text-base leading-8 text-zinc-300 sm:text-lg">
             Estas são algumas das tecnologias e ferramentas que estou estudando
@@ -407,7 +409,7 @@ export default function HomePage() {
         className="mx-auto max-w-6xl px-4 py-12 sm:px-6 sm:py-16"
       >
         <div className="mb-8">
-          <h3 className="text-3xl font-bold">Projetos</h3>
+          <h2 className="text-3xl font-bold">Projetos</h2>
           <p className="mt-2 text-zinc-400">
             Projetos que mostram minha evolução, prática e aprendizado.
           </p>
@@ -429,9 +431,9 @@ export default function HomePage() {
                 </span>
               </div>
 
-              <h4 className="mb-3 text-2xl font-bold text-white">
+              <h3 className="mb-3 text-2xl font-bold text-white">
                 {project.title}
-              </h4>
+              </h3>
 
               <p className="mb-5 min-h-[84px] leading-7 text-zinc-300">
                 {project.description}
@@ -479,7 +481,7 @@ export default function HomePage() {
         className="mx-auto max-w-6xl px-4 py-12 sm:px-6 sm:py-16"
       >
         <div className="rounded-3xl border border-white/10 bg-white/5 p-6 sm:p-8">
-          <h3 className="mb-4 text-3xl font-bold">Contato</h3>
+          <h2 className="mb-4 text-3xl font-bold">Contato</h2>
 
           <p className="mb-3 text-base leading-8 text-zinc-300 sm:text-lg">
             Estou construindo minha base como desenvolvedora e aberta a novas
