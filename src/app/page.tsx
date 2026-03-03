@@ -61,6 +61,23 @@ function ExternalLinkIcon({ className = "h-4 w-4" }: { className?: string }) {
   );
 }
 
+function ArrowUpIcon({ className = "h-5 w-5" }: { className?: string }) {
+  return (
+    <svg
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="2"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      aria-hidden="true"
+      className={className}
+    >
+      <path d="m18 15-6-6-6 6" />
+    </svg>
+  );
+}
+
 export default function HomePage() {
   const projects = [
     {
@@ -121,7 +138,7 @@ export default function HomePage() {
   ];
 
   return (
-    <main className="min-h-screen bg-zinc-950 text-white">
+    <main id="top" className="min-h-screen bg-zinc-950 text-white">
       <section className="border-b border-white/10">
         <div className="mx-auto flex max-w-6xl items-center justify-between px-4 py-5 sm:px-6 sm:py-6">
           <h1 className="text-xl font-bold">Noelle</h1>
@@ -542,6 +559,14 @@ export default function HomePage() {
           </div>
         </div>
       </footer>
+
+      <a
+        href="#top"
+        className="fixed right-5 bottom-5 inline-flex h-12 w-12 items-center justify-center rounded-full border border-violet-400/20 bg-violet-500 text-white shadow-lg shadow-violet-950/30 transition hover:bg-violet-400"
+        aria-label="Voltar ao topo"
+      >
+        <ArrowUpIcon className="h-5 w-5" />
+      </a>
     </main>
   );
 }
