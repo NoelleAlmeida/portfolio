@@ -247,15 +247,55 @@ export default function HomePage() {
       </section>
 
       <section id="sobre" className="mx-auto max-w-6xl px-6 py-16">
-        <div className="rounded-3xl border border-white/10 bg-white/5 p-8">
-          <h3 className="mb-4 text-3xl font-bold">Sobre mim</h3>
+        <div className="grid gap-6 lg:grid-cols-[1.2fr_0.8fr]">
+          <div className="rounded-3xl border border-white/10 bg-white/5 p-8">
+            <h3 className="mb-4 text-3xl font-bold">Sobre mim</h3>
 
-          <p className="text-lg leading-8 text-zinc-300">
-            Sou iniciante na programação e estou construindo minha jornada na
-            prática. Já publiquei meus primeiros projetos e sigo evoluindo com
-            foco em desenvolvimento web, estudando React, TypeScript, Tailwind
-            CSS e outras tecnologias do ecossistema JavaScript.
-          </p>
+            <p className="mb-5 text-lg leading-8 text-zinc-300">
+              Sou uma desenvolvedora em formação, com foco em me tornar cada vez
+              mais uma profissional{" "}
+              <span className="font-semibold text-white">full stack</span>.
+              Estou estudando bastante, praticando todos os dias e criando
+              projetos reais para aprender de forma consistente e aplicar na
+              prática tudo o que venho estudando.
+            </p>
+
+            <p className="text-lg leading-8 text-zinc-300">
+              Meu objetivo é evoluir continuamente no desenvolvimento web,
+              fortalecendo minha base no front-end e avançando cada vez mais no
+              caminho para atuar como desenvolvedora full stack, construindo
+              soluções completas, bem estruturadas e funcionais.
+            </p>
+          </div>
+
+          <div className="rounded-3xl border border-violet-400/20 bg-violet-500/10 p-8">
+            <h3 className="mb-4 text-2xl font-bold text-white">
+              Objetivo profissional
+            </h3>
+
+            <p className="mb-4 leading-7 text-violet-100">
+              Busco crescer como desenvolvedora full stack, estudando bastante,
+              criando projetos práticos e transformando conhecimento em
+              experiência real.
+            </p>
+
+            <div className="space-y-3 text-sm text-violet-100">
+              <div className="rounded-2xl border border-white/10 bg-black/10 p-4">
+                <span className="font-semibold text-white">Foco:</span> evolução
+                constante com projetos reais
+              </div>
+
+              <div className="rounded-2xl border border-white/10 bg-black/10 p-4">
+                <span className="font-semibold text-white">Estudos:</span>{" "}
+                React, TypeScript, Tailwind CSS e Next.js
+              </div>
+
+              <div className="rounded-2xl border border-white/10 bg-black/10 p-4">
+                <span className="font-semibold text-white">Direção:</span>{" "}
+                desenvolvimento full stack
+              </div>
+            </div>
+          </div>
         </div>
       </section>
 
