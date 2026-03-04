@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from "react";
 import { GithubIcon, LinkedinIcon, MailIcon } from "~/components/icons";
+import { ThemeToggle } from "~/components/v0/theme-toggle";
 
 const navLinks = [
   { href: "#sobre", label: "Sobre" },
@@ -53,6 +54,7 @@ export function Header() {
         </nav>
 
         <div className="hidden items-center gap-2 md:flex">
+          <ThemeToggle />
           <a
             href="https://github.com/NoelleAlmeida"
             target="_blank"

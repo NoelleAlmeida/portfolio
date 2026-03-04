@@ -4,7 +4,7 @@ export function HeroSection() {
   return (
     <section className="relative overflow-hidden" id="top">
       {/* Subtle grid background */}
-      <div className="absolute inset-0 bg-[linear-gradient(to_right,oklch(0.22_0.005_260)_1px,transparent_1px),linear-gradient(to_bottom,oklch(0.22_0.005_260)_1px,transparent_1px)] bg-[size:4rem_4rem] opacity-30" />
+      <div className="hero-grid absolute inset-0 bg-[linear-gradient(to_right,oklch(0.22_0.005_260)_1px,transparent_1px),linear-gradient(to_bottom,oklch(0.22_0.005_260)_1px,transparent_1px)] bg-[size:4rem_4rem] opacity-30" />
 
       {/* Primary glow */}
       <div className="bg-primary/5 animate-glow-pulse absolute top-0 left-1/4 h-[500px] w-[500px] rounded-full blur-[120px]" />

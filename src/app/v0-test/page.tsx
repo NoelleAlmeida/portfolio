@@ -9,7 +9,7 @@ import { TechSection } from "~/components/v0/tech-section";
 
 export default function HomePage() {
   return (
-    <main className="bg-zinc-950 text-white">
+    <main className="bg-background text-foreground">
       <HeroSection />
       <AboutSection />
       <JourneySection />
