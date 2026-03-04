@@ -16,3 +16,6 @@ export function MailIcon({ className = "" }: { className?: string }) {
 export function LinkedinIcon({ className = "" }: { className?: string }) {
   return <span className={className}>in</span>;
 }
+export function ArrowUpIcon({ className = "" }: { className?: string }) {
+  return <span className={className}>↑</span>;
+}
