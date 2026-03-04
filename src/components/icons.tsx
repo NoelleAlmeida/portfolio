@@ -1,21 +1,15 @@
-export function GithubIcon({ className = "" }: { className?: string }) {
-  return <span className={className}>GitHub</span>;
-}
+import {
+  ArrowUp,
+  Code2,
+  ExternalLink,
+  Github,
+  Linkedin,
+  Mail,
+} from "lucide-react";
 
-export function ExternalLinkIcon({ className = "" }: { className?: string }) {
-  return <span className={className}>↗</span>;
-}
-
-export function CodeIcon({ className = "" }: { className?: string }) {
-  return <span className={className}>{"</>"}</span>;
-}
-export function MailIcon({ className = "" }: { className?: string }) {
-  return <span className={className}>@</span>;
-}
-
-export function LinkedinIcon({ className = "" }: { className?: string }) {
-  return <span className={className}>in</span>;
-}
-export function ArrowUpIcon({ className = "" }: { className?: string }) {
-  return <span className={className}>↑</span>;
-}
+export const GithubIcon = Github;
+export const ExternalLinkIcon = ExternalLink;
+export const CodeIcon = Code2;
+export const MailIcon = Mail;
+export const LinkedinIcon = Linkedin;
+export const ArrowUpIcon = ArrowUp;

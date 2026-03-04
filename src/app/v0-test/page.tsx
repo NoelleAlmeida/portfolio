@@ -7,7 +7,7 @@ import { JourneySection } from "~/components/v0/journey-section";
 import { ProjectsSection } from "~/components/v0/projects-section";
 import { TechSection } from "~/components/v0/tech-section";
 
-export default function V0TestPage() {
+export default function HomePage() {
   return (
     <main className="bg-zinc-950 text-white">
       <HeroSection />
