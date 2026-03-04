@@ -1,29 +1,56 @@
-# Create T3 App
+# Noelle | Portfólio
 
-This is a [T3 Stack](https://create.t3.gg/) project bootstrapped with `create-t3-app`.
+Meu portfólio pessoal desenvolvido para apresentar minha evolução na programação, meus projetos e meu objetivo de crescer como desenvolvedora full stack.
 
-## What's next? How do I make an app with this?
+## 🔗 Acesse o projeto
 
-We try to keep this project as simple as possible, so you can start with just the scaffolding we set up for you, and add additional things later when they become necessary.
+* **Site:** https://portfolio-eta-five-29.vercel.app
+* **LinkedIn:** https://www.linkedin.com/in/noelle-almeida-dos-santos-97a92a3a5/
+* **GitHub:** https://github.com/NoelleAlmeida
 
-If you are not familiar with the different technologies used in this project, please refer to the respective docs. If you still are in the wind, please join our [Discord](https://t3.gg/discord) and ask for help.
+## ✨ Sobre o projeto
 
-- [Next.js](https://nextjs.org)
-- [NextAuth.js](https://next-auth.js.org)
-- [Prisma](https://prisma.io)
-- [Drizzle](https://orm.drizzle.team)
-- [Tailwind CSS](https://tailwindcss.com)
-- [tRPC](https://trpc.io)
+Este projeto foi criado para reunir minhas principais informações profissionais, tecnologias que estou estudando e projetos publicados.
 
-## Learn More
+No portfólio, apresento:
 
-To learn more about the [T3 Stack](https://create.t3.gg/), take a look at the following resources:
+* minha apresentação profissional
+* minha jornada na programação
+* as tecnologias que estou estudando
+* meus projetos publicados
+* formas de contato
 
-- [Documentation](https://create.t3.gg/)
-- [Learn the T3 Stack](https://create.t3.gg/en/faq#what-learning-resources-are-currently-available) — Check out these awesome tutorials
+## 🚀 Tecnologias utilizadas
 
-You can check out the [create-t3-app GitHub repository](https://github.com/t3-oss/create-t3-app) — your feedback and contributions are welcome!
+* Next.js
+* TypeScript
+* Tailwind CSS
+* React
 
-## How do I deploy this?
+## 📁 Estrutura do projeto
 
-Follow our deployment guides for [Vercel](https://create.t3.gg/en/deployment/vercel), [Netlify](https://create.t3.gg/en/deployment/netlify) and [Docker](https://create.t3.gg/en/deployment/docker) for more information.
+O projeto foi desenvolvido com foco em organização, responsividade e clareza visual.
+
+## 🎯 Objetivo
+
+Meu objetivo com este portfólio é registrar minha evolução, praticar desenvolvimento web na prática e fortalecer minha base para atuar como desenvolvedora full stack.
+
+## ▶️ Como rodar localmente
+
+npm install
+npm run dev
+
+Depois, abra:
+http://localhost:3000
+
+## 📌 Status
+
+Projeto em evolução, com melhorias visuais e funcionais sendo adicionadas aos poucos.
+
+## 👩‍💻 Autora
+
+**Noelle Almeida**
+Desenvolvedora full stack em formação
+
+* LinkedIn: https://www.linkedin.com/in/noelle-almeida-dos-santos-97a92a3a5/
+* GitHub: https://github.com/NoelleAlmeida
