@@ -9,3 +9,10 @@ export function ExternalLinkIcon({ className = "" }: { className?: string }) {
 export function CodeIcon({ className = "" }: { className?: string }) {
   return <span className={className}>{"</>"}</span>;
 }
+export function MailIcon({ className = "" }: { className?: string }) {
+  return <span className={className}>@</span>;
+}
+
+export function LinkedinIcon({ className = "" }: { className?: string }) {
+  return <span className={className}>in</span>;
+}
