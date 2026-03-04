@@ -1,6 +1,7 @@
 import { AboutSection } from "~/components/v0/about-section";
 import { HeroSection } from "~/components/v0/hero-section";
 import { JourneySection } from "~/components/v0/journey-section";
+import { TechSection } from "~/components/v0/tech-section";
 
 export default function V0TestPage() {
   return (
@@ -8,6 +9,7 @@ export default function V0TestPage() {
       <HeroSection />
       <AboutSection />
       <JourneySection />
+      <TechSection />
     </main>
   );
 }
