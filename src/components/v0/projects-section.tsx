@@ -2,6 +2,23 @@ import { GithubIcon, ExternalLinkIcon } from "~/components/icons";
 
 const projects = [
   {
+    title: "CineBusca",
+    description:
+      "App para buscar filmes/séries, ver detalhes e salvar favoritos. Inclui histórico de buscas, URL compartilhável, acessibilidade (atalhos) e testes.",
+    github: "https://github.com/NoelleAlmeida/buscador-filmes",
+    demo: "https://buscador-filmes-navy.vercel.app",
+    techs: [
+      "React",
+      "Vite",
+      "React Router",
+      "LocalStorage",
+      "Vitest",
+      "Vercel",
+    ],
+    highlight: "Projeto em destaque",
+    status: "Publicado",
+  },
+  {
     title: "ToDo App",
     description:
       "Meu primeiro projeto publicado. Criei essa aplicação para praticar organização de tarefas, componentes, estrutura de projeto e deploy.",
