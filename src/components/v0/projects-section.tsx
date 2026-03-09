@@ -2,6 +2,16 @@ import { GithubIcon, ExternalLinkIcon } from "~/components/icons";
 
 const projects = [
   {
+    title: "Calculadora",
+    description:
+      "Calculadora desenvolvida com HTML, CSS e JavaScript, com modo noturno, histórico de cálculos, rodapé, seção sobre e versão científica.",
+    github: "https://github.com/NoelleAlmeida/calculadora-portfolio",
+    demo: "https://calculadora-portfolio-brown.vercel.app/",
+    techs: ["HTML", "CSS", "JavaScript"],
+    highlight: "Projeto em destaque",
+    status: "Publicado",
+  },
+  {
     title: "CineBusca",
     description:
       "App para buscar filmes/séries, ver detalhes e salvar favoritos. Inclui histórico de buscas, URL compartilhável, acessibilidade (atalhos) e testes.",
@@ -15,7 +25,7 @@ const projects = [
       "Vitest",
       "Vercel",
     ],
-    highlight: "Projeto em destaque",
+    highlight: "Projeto publicado",
     status: "Publicado",
   },
   {
@@ -25,7 +35,7 @@ const projects = [
     github: "https://github.com/NoelleAlmeida/ToDo",
     demo: "https://to-do-noelle.vercel.app/",
     techs: ["React", "TypeScript", "CSS"],
-    highlight: "Projeto em destaque",
+    highlight: "Projeto publicado",
     status: "Publicado",
   },
   {
